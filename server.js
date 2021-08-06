@@ -105,13 +105,13 @@ function getEvents(req, res) {
             res.json(mockEvents);
         });
 
-    snapshot.docs.forEach(element => {
-        //get data
-        const el = element.data();
-        //get internal firestore id and assign to object
-        el.id = element.id;
-        //add object to array
-        ret.events.push(el);
-    }, this);
+    // snapshot.docs.forEach(element => {
+    //     //get data
+    //     const el = element.data();
+    //     //get internal firestore id and assign to object
+    //     el.id = element.id;
+    //     //add object to array
+    //     ret.events.push(el);
+    // }, this);
 
 };
